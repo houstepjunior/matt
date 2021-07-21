@@ -1,0 +1,29 @@
+
+<html>
+    <body>
+        
+        <form>
+            I D :<br>
+            <input type="text" name="ID" id="ID" ><br>
+            PassWord:<br>
+            <input type="text" name="pw" id="pw" ><br>
+          
+        <input id="execute_btn" type="button" value="확인" >
+
+    </form>
+        <script>
+        document.getElementById('execute_btn').onclick = function() {
+            var user_id = document.getElementById('ID').value;
+            var user_pass = document.getElementById('pw').value;
+            if (user_id === "houstep" && user_pass === "bjchango") {
+                alert("로그인 성공!");
+            }
+            else {
+                alert("로그인 실패!");
+            }
+        }
+         </script>
+
+
+    </body>
+    </html>
